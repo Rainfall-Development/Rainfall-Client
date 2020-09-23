@@ -1,0 +1,39 @@
+﻿<Window x:Class="Client_Rainfall.Welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_Rainfall"
+        mc:Ignorable="d"
+        
+        Title="Welcome" Height="294" Width="609" ResizeMode="NoResize" >
+    <Grid Background="#FFF1F1F1">
+        <Button Margin="22,220,501,10" Content="Continue" FontSize="11" IsEnabled="False"/>
+        <CheckBox Margin="171,225,146,5">
+            <CheckBox.Content>
+                <Span>
+                    I have read and agreed to the
+                    <Hyperlink>Terms of Service</Hyperlink>
+                </Span>
+            </CheckBox.Content>
+        </CheckBox>
+        <CheckBox Margin="462,225,10,5" Content="Do not show again"/>
+        <Image Source="rainfall.png" Margin="10,10,525,194"></Image>
+        <Grid Margin="76,10,10,38">
+            <Label Content="Rainfall ROBLOX Lua Client" Margin="0,0,0,179" FontSize="17" FontFamily="Segoe UI Semibold"/>
+            <TextBlock Margin="6,36,0,0" TextWrapping="Wrap">Rainfall is a Roblox Lua script utility and Lua debugger.<LineBreak/>
+                It is written in both C++ and C# for Windows and is open-source on <Hyperlink NavigateUri="https://github.com/Rainfall-Development/Rainfall-Client" RequestNavigate="Hyperlink_RequestNavigate">GitHub</Hyperlink><LineBreak/>
+                This project is currently maintained by 1 person and helped by contributors on GitHub.<LineBreak/>
+                There are still a lot of upcoming changes to execution performance and capability.
+            </TextBlock>
+            <TextBlock Margin="0,117,0,0" TextAlignment="Center" TextWrapping="Wrap">
+                To get started, you must ensure that <Bold>Visual C++ Redistributes</Bold> has been installed.<LineBreak/>
+                From there, you will be able to run the exploit.<LineBreak/>
+                Make sure that your current version of Windows is <Bold>Windows 10</Bold>. <LineBreak/>
+                If you have any further question, please refer to our <Hyperlink>Discord</Hyperlink> server for support.<LineBreak/>
+                <Span Foreground="Red" FontSize="14"><Bold>Rainfall does not allow misuse of our program for malicious intent.</Bold></Span>
+                
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>
