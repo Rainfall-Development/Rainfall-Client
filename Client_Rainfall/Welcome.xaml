@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Client_Rainfall"
         mc:Ignorable="d"
         
-        Title="Welcome" Height="294" Width="609" ResizeMode="NoResize" >
+        Title="Welcome to Rainfall" Height="294" Width="609" ResizeMode="NoResize" >
     <Grid Background="#FFF1F1F1">
-        <Button Margin="22,220,501,10" Content="Continue" FontSize="11" IsEnabled="False"/>
-        <CheckBox Margin="171,225,146,5">
+        <Button Margin="22,220,501,10" Content="Continue" FontSize="11" Click="ContinueButton"/>
+        <CheckBox Margin="171,225,146,5" Name="Agreement">
             <CheckBox.Content>
                 <Span>
                     I have read and agreed to the

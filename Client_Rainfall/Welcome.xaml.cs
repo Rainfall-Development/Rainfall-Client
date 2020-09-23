@@ -31,5 +31,27 @@ namespace Client_Rainfall
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
+
+        private void ContinueButton(object sender, RoutedEventArgs e)
+        {
+            if(Agreement.IsChecked == true)
+            {
+                Client client = new Client();
+                client.Show();
+                Hide();
+            }
+            else
+            {
+                 MessageBoxResult result= MessageBox.Show("You must agree with the Terms of Service before continuing. If not, the application will now exit.", "Terms of Service agreement", MessageBoxButton.OKCancel, MessageBoxImage.Error);
+                switch(result)
+                {
+                    case MessageBoxResult.OK:                        
+                        break;
+                    case MessageBoxResult.Cancel:
+                        Environment.Exit(0);
+                        break;
+                }
+            }
+        }
     }
 }
